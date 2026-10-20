@@ -56,9 +56,13 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 
 ## Debrief
 
-**Show and Swap status:** Not conducted. I did not attend the breakout session, so there is no peer feedback or timed usability result to report. This retrospective documents the build and iteration; it does not replace validation from another person.
-
-- **What worked:** The prototype connects a risk summary, source records, and a handoff preview in one flow. Programmatic checks passed for category filtering, source search, evidence rendering, and local draft save/reset. These checks establish interface behavior, not user value or model quality.
-- **What broke / felt like a toy:** The first version was a simple three-card brief. On comparing it with another class prototype, I wanted a more cohesive dashboard and useful detail views. The revised build adds summary cards, filtering, search, evidence tabs, and editable handoff drafts. All findings remain prewritten; relevance, urgency accuracy, time savings, and real integration behavior are unproven. Visual browser QA was not performed in the build environment.
-- **What I'd change next pass:** Test whether a PM can identify the urgent finding and its evidence within two minutes, and whether they understand that saved drafts do not assign tasks. Use feedback to simplify the view. Later, test synthesis on authorized sample data and evaluate source grounding separately from UI usability.
-
+**What worked:**
+- The top of the page tells the story fast: 39 messy signals became 13 risks, and 4 need a look now.
+- It’s upfront that it’s fake data, nothing gets sent, and the PM makes the call. That builds trust.
+**What broke / felt like a toy:**
+- It’s a scripted demo on made-up data, so we can’t tell if it would handle our real Slack and Jira.
+- Nobody has tried it yet, so the two-minute claim is just a claim.
+- The handoff stops at a draft in my browser. I’d still have to copy it over myself.
+**What I’d change next pass:**
+- Watch 3–5 PMs use it cold and time them.
+- Run it on one real week of our actual messages, and add one paste-ready handoff for Jira or Slack.
