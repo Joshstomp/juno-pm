@@ -4,7 +4,7 @@
 
 [Open the Weekly Risk Brief](https://juno-weekly-risk-brief.amusedsage512.chatgpt.site)
 
-Built with ChatGPT/Codex and Sites. The prototype is a static interactive demo using 26 fictional Slack, Jira, and Notion records, grouped into 13 risks. It does not run an AI model or access live systems.
+Built with ChatGPT/Codex and Sites. The prototype is a static interactive demo using 39 fictional Slack, Jira, and Notion records, grouped into 13 risks. It does not run an AI model or access live systems.
 
 ## What it demonstrates
 
@@ -41,7 +41,7 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 
 **Role:** Act as a product designer and prototyping engineer building Juno PM's internal Weekly Risk Brief for RocketShip.
 
-**Task:** Build one review screen for a PM preparing Monday's prioritization meeting. Show 13 risks from 26 fictional Slack, Jira, and Notion records. Let the PM filter findings, inspect evidence, and prepare a handoff draft.
+**Task:** Build one review screen for a PM preparing Monday's prioritization meeting. Show 13 risks from 39 fictional Slack, Jira, and Notion records. Let the PM filter findings, inspect evidence, and prepare a handoff draft.
 
 **Constraints:** Clearly label all data fictional. No live integrations or AI claims. Preserve source references, uncertainty, and NEEDS CLARIFICATION. No invented revenue, root cause, or numerical severity score. Owner and date selections are proposed draft values, not assignments or delivery commitments. No Jira writes, Slack messages, customer comms, or autonomous actions. Local storage only for drafts. Route contracts, legal, and regulator issues to the human PM.
 
@@ -52,7 +52,7 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 - Role: Juno is a risk watchdog and strategic partner; the human PM decides and executes.
 - Task: The core remains signal synthesis and weekly risk review. Task preview is a proposed internal next step, not a full specification or autonomous delivery workflow.
 - Constraints: Source citations, clarification for ambiguity, no fabricated business evidence, no sending, and no actual assignments.
-- Format: Partial alignment only. The prototype is a dashboard with 13 browsable findings, while the M1 skill requires a Markdown response capped at 350 words and five main findings, with overflow disclosed. The dashboard is not an actual skill output and does not validate that format. A future generated-brief view should enforce the existing limits while the 13-item list remains the underlying review workspace.
+- Format: The M1 skill now supports structured Markdown or interactive dashboard review, without a fixed finding or word cap. The 13-item searchable list, progressively disclosed evidence, coverage, and local task drafts match that format. No live AI instruction-following has been validated.
 
 ## Debrief
 
@@ -72,8 +72,12 @@ The initial build showed that displaying risks is only part of the workflow. Con
 
 ### Latest UI revision
 
-Expanded to 13 fictional findings backed by 26 source records: four immediate-review findings, five this-week findings, and four needing clarification. Removed the sidebar and replaced the methodology page with a footer link that opens a dialog card. Each finding retains its overview, evidence, and editable local task draft. Programmatic checks covered all 13 detail/task views and category counts. Peer validation remains not conducted.
+Expanded to 13 fictional findings backed by 39 source records: four immediate-review findings, five this-week findings, and four needing clarification. Removed the sidebar and replaced the methodology page with a footer link that opens a dialog card. Each finding retains its overview, three evidence records, and editable local task draft. Evidence includes source type, channel or document location, author and role, customer, UTC timestamps, status, related records, and original text. All metadata is fictional demo data. Derived notes are explicitly not independent corroboration. Programmatic checks covered all 13 detail/task views and category counts. Peer validation remains not conducted.
 
 ### Screenshot availability
 
 A screenshot has not been added: the supported browser capture workflow was unavailable in this build environment. Use the live prototype link above to inspect the current interface. No rendered screenshot or visual browser verification is claimed.
+
+### Evidence enrichment
+
+Each finding now exposes three relevant source records with provenance, for 39 fictional records total. Unknown updates and missing live source links are explicit. Linked intake and derived PM notes are not counted as independent evidence. Programmatic checks covered provenance rendering for all 13 findings. The M1 skill was updated to require available provenance and prohibit invented missing metadata in real use.
