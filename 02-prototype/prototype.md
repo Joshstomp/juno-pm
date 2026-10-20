@@ -4,7 +4,7 @@
 
 [Open the Weekly Risk Brief](https://juno-weekly-risk-brief.amusedsage512.chatgpt.site)
 
-Built with ChatGPT/Codex and Sites. The prototype is a static interactive demo using six fictional Slack, Jira, and Notion records, grouped into three risks. It does not run an AI model or access live systems.
+Built with ChatGPT/Codex and Sites. The prototype is a static interactive demo using 26 fictional Slack, Jira, and Notion records, grouped into 13 risks. It does not run an AI model or access live systems.
 
 ## What it demonstrates
 
@@ -12,7 +12,7 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 
 **Specific user:** The PM assembling the weekly risk discussion before Monday's prioritization meeting.
 
-**Surface:** One internal review screen with summary cards, a searchable risk list, priority filters, and a detail dialog with Overview, Evidence, and Task draft tabs.
+**Surface:** One internal review screen without a sidebar, with summary cards, a searchable risk list, priority filters, and a detail dialog with Overview, Evidence, and Task draft tabs.
 
 **Work removed or shortened:** Reading scattered reports, matching linked tickets to their original messages, organizing risks, and preparing the context for a PM handoff. Actual time savings have not been measured.
 
@@ -30,7 +30,7 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 
 ### Working flow
 
-1. Review six signals grouped into three findings: an urgent reported export blockage, a dated authentication dependency, and an ambiguous dark mode request.
+1. Review six signals grouped into 13 findings: an urgent reported export blockage, a dated authentication dependency, and an ambiguous dark mode request.
 2. Filter by review category or search by finding text and source ID.
 3. Open a finding and inspect reported impact, uncertainty, and a proposed next step.
 4. Read the fictional source records in the Evidence tab.
@@ -41,7 +41,7 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 
 **Role:** Act as a product designer and prototyping engineer building Juno PM's internal Weekly Risk Brief for RocketShip.
 
-**Task:** Build one review screen for a PM preparing Monday's prioritization meeting. Show three risks from six fictional Slack, Jira, and Notion records. Let the PM filter findings, inspect evidence, and prepare a handoff draft.
+**Task:** Build one review screen for a PM preparing Monday's prioritization meeting. Show 13 risks from 26 fictional Slack, Jira, and Notion records. Let the PM filter findings, inspect evidence, and prepare a handoff draft.
 
 **Constraints:** Clearly label all data fictional. No live integrations or AI claims. Preserve source references, uncertainty, and NEEDS CLARIFICATION. No invented revenue, root cause, or numerical severity score. Owner and date selections are proposed draft values, not assignments or delivery commitments. No Jira writes, Slack messages, customer comms, or autonomous actions. Local storage only for drafts. Route contracts, legal, and regulator issues to the human PM.
 
@@ -73,3 +73,7 @@ Give a reviewer the link without a walkthrough. Ask: “Which risk would you inv
 ### Async debrief
 
 The initial build showed that displaying risks is only part of the workflow. Connecting each finding to its evidence and an editable handoff makes the intended review flow more coherent. Whether this helps another PM remains untested because I missed Show and Swap. The next step is an independent usability check, not a claim of proven impact.
+
+### Latest UI revision
+
+Expanded to 13 fictional findings backed by 26 source records: four immediate-review findings, five this-week findings, and four needing clarification. Removed the sidebar and replaced the methodology page with a footer link that opens a dialog card. Each finding retains its overview, evidence, and editable local task draft. Programmatic checks covered all 13 detail/task views and category counts. Peer validation remains not conducted.
