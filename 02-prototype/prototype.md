@@ -59,10 +59,12 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 **What worked:**
 - The top of the page tells the story fast: 39 messy signals became 13 risks, and 4 need a look now.
 - It’s upfront that it’s fake data, nothing gets sent, and the PM makes the call. That builds trust.
+  
 **What broke / felt like a toy:**
 - It’s a scripted demo on made-up data, so we can’t tell if it would handle our real Slack and Jira.
 - Nobody has tried it yet, so the two-minute claim is just a claim.
 - The handoff stops at a draft in my browser. I’d still have to copy it over myself.
+  
 **What I’d change next pass:**
 - Watch 3–5 PMs use it cold and time them.
 - Run it on one real week of our actual messages, and add one paste-ready handoff for Jira or Slack.
