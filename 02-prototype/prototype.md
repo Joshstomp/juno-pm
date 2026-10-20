@@ -52,7 +52,7 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 - Role: Juno is a risk watchdog and strategic partner; the human PM decides and executes.
 - Task: The core remains signal synthesis and weekly risk review. Task preview is a proposed internal next step, not a full specification or autonomous delivery workflow.
 - Constraints: Source citations, clarification for ambiguity, no fabricated business evidence, no sending, and no actual assignments.
-- Format: The brief is a concise structured view, with detail and task preview progressively disclosed. It is a UI representation of the skill, not a demonstration that a live model follows its Markdown response instructions.
+- Format: Partial alignment only. The prototype is a dashboard with 13 browsable findings, while the M1 skill requires a Markdown response capped at 350 words and five main findings, with overflow disclosed. The dashboard is not an actual skill output and does not validate that format. A future generated-brief view should enforce the existing limits while the 13-item list remains the underlying review workspace.
 
 ## Debrief
 
@@ -61,10 +61,6 @@ A RocketShip PM preparing for Monday's prioritization meeting can review a weekl
 - **What worked:** The prototype connects a risk summary, source records, and a handoff preview in one flow. Programmatic checks passed for category filtering, source search, evidence rendering, and local draft save/reset. These checks establish interface behavior, not user value or model quality.
 - **What broke / felt like a toy:** The first version was a simple three-card brief. On comparing it with another class prototype, I wanted a more cohesive dashboard and useful detail views. The revised build adds summary cards, filtering, search, evidence tabs, and editable handoff drafts. All findings remain prewritten; relevance, urgency accuracy, time savings, and real integration behavior are unproven. Visual browser QA was not performed in the build environment.
 - **What I'd change next pass:** Test whether a PM can identify the urgent finding and its evidence within two minutes, and whether they understand that saved drafts do not assign tasks. Use feedback to simplify the view. Later, test synthesis on authorized sample data and evaluate source grounding separately from UI usability.
-
-### Inspiration
-
-[Classmate's Juno Ticket Prioritizer](https://luxury-dolphin-d21501.netlify.app/) informed the summary-card, filtering, and tabbed task/evidence patterns. This implementation uses its own content and code, keeps the Weekly Risk Brief scope, and does not adopt the reference's scoring model or ARR figures.
 
 ### Proposed follow-up test, not conducted
 
@@ -77,3 +73,7 @@ The initial build showed that displaying risks is only part of the workflow. Con
 ### Latest UI revision
 
 Expanded to 13 fictional findings backed by 26 source records: four immediate-review findings, five this-week findings, and four needing clarification. Removed the sidebar and replaced the methodology page with a footer link that opens a dialog card. Each finding retains its overview, evidence, and editable local task draft. Programmatic checks covered all 13 detail/task views and category counts. Peer validation remains not conducted.
+
+### Screenshot availability
+
+A screenshot has not been added: the supported browser capture workflow was unavailable in this build environment. Use the live prototype link above to inspect the current interface. No rendered screenshot or visual browser verification is claimed.
